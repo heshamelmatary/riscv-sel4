@@ -60,7 +60,7 @@ make -j 8 && make install
 cd ..
 
 # (2) Setup riscv-tools/gnu-riscv to build "soft-float" toolchain
-sed -i 's/build_project riscv-gnu-toolchain --prefix=$RISCV/build_project riscv-gnu-toolchain --prefix=$RISCV --with-arch=rv64imafdc --with-abi=lp64/g' ./build.sh
+sed -i 's/build_project riscv-gnu-toolchain --prefix=$RISCV/build_project riscv-gnu-toolchain --prefix=$RISCV --with-arch=rv64imafdc --with-abi=lp64 --enable-multilib/g' ./build.sh
 
 # (3) Build riscv-tools
 
