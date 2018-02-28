@@ -45,7 +45,7 @@ git clone https://github.com/riscv/riscv-tools.git
 
 ## Check out a revision that works (and tested) with seL4
 cd riscv-tools
-git checkout 9868299
+git checkout priv-1.10
 git submodule update --init --recursive
 
 ## Get/Setup RISC-V QEMU
