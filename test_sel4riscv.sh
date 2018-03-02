@@ -50,9 +50,9 @@ git submodule update --init --recursive
 
 ## Get/Setup RISC-V QEMU
 echo -e "${GREEN}########## Get RISC-V QEMU ########${NC}"
-git clone https://github.com/riscv/riscv-qemu.git
+git clone https://github.com/heshamelmatary/riscv-qemu.git
 cd riscv-qemu
-git checkout 6256f8a
+git checkout sfence
 git submodule update --init dtc
 echo -e "${GREEN}########## Build RISC-V QEMU ########${NC}"
 ./configure --target-list=riscv64-softmmu,riscv32-softmmu --prefix=$RISCV
