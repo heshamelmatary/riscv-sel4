@@ -77,7 +77,7 @@ echo -e "${GREEN}########## Build 32-bit Toolchain ########${NC}"
 echo -e "${GREEN}########## Get sel4test/riscv ########${NC}"
 cd $SRC_ROOT
 mkdir sel4test && cd sel4test
-repo init -u http://halmatary@bitbucket.keg.ertos.in.nicta.com.au/scm/~halmatary/sel4test-manifest.git -m sel4test-28022018.xml
+repo init -u https://github.com/heshamelmatary/sel4riscv-manifest.git
 repo sync
 
 # (5) build, test and run RV64 sel4test
